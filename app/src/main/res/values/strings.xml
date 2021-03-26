@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">The Guardian - Latest Reviews</string>
+    <string name="no_connection">No articles found - Check your internet settings and restart the app</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/list_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/list_headline"
+            style="@style/headline_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/list_thumbnail"
+            tools:text="Headline Goes Here" />
+
+        <TextView
+            android:id="@+id/list_contributor"
+            style="@style/contributor_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_headline"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/list_thumbnail"
+            tools:text="Contributor name here" />
+
+        <TextView
+            android:id="@+id/list_publication_date"
+            style="@style/publication_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_contributor"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/list_thumbnail"
+            tools:text="Date of publication here" />
+
+        <TextView
+            android:id="@+id/list_section"
+            style="@style/section_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_thumbnail"
+            android:background="@color/white"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textAllCaps="true"
+            tools:text="SECTIOn" />
+
+    </RelativeLayout>
+
+</LinearLayout>
